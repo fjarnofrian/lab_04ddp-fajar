@@ -1,0 +1,54 @@
+# DDP LAB-4
+# Nama: <Tulis nama di sini>
+# NIM: <Tulis NIM di sini>
+
+# SOAL 1 - Mencetak nama
+# Tuliskan program untuk Soal 1 di bawah ini
+nama = input("masukan nama:)
+#input nama
+jumlahkata = len(nama)
+#Hitung jumlah kata dengan len
+i = 0
+while i < jumlahkata:
+#ketika i < jumlah kata, bagian ini akan di looping
+  i = i + 1
+  print(nama[0:i])
+  #print nama menggunakan string slicing, maka akan membentuk perkata setiap loop
+  
+print()
+  
+
+# SOAL 2 - Validasi teks
+# Tuliskan program untuk Soal 2 di bawah ini
+while True:
+  text = input("Masukkan sebuah teks : ")
+  #input text
+  jumlahtext = len(text)
+  #hitungjumlah text
+
+  if (jumlahtext >= 8 
+  # validasi text jumlah text diatas 8 
+  and (text.endswith("RRR") or text.endswith("rrr"))
+  # validasi text ujungnya RRR atau rrr
+  and (text.startswith('FR') or text.startswith('fr') or text.startswith('Fr') or text.startswith('fR'))
+  # validasi text berupa FR , fr, Fr, atau fR di awal text 
+  and not (text.isalpha())
+  #dan tidak text semua
+
+  ):
+  # validasi text tersebut harus berisi nomor
+    print("Teks valid, Selamat anda beruntung.")
+    #jika semuanya tersedia maka valid
+    break
+    #end looping dengan break
+  else:
+    print("Teks coba lagi.")
+    # jika salah satunya saja tidak ada maka tidak valid
+
+
+
+
+
+
+
+
